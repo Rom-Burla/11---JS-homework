@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <title>Cars</title>
+</head>
+
+<body>
+    <label for="name">Car manufacturer</label>
+    <input type="text" name="name" id="car-manufacturer">
+    <label for="color">Car color</label>
+    <input type="text" name="color" id="car-color">
+    <label for="year">Car manufacture year</label>
+    <input type="number" name="year" id="car-year" onkeydown="limit(this);" onkeyup="limit(this);">
+    <button onclick="add()">Add a car</button>
+    <label for="filter">Filter by Year</label>
+    <input type="number" name="filter" id="filter-by-year" onkeydown="limit(this);" onkeyup="limit(this);">
+    <button onclick="display()">Filter</button>
+    <div id="filter-display"></div>
+
+
+    <script src="./app/app.js"></script>
+</body>
+
+</html>
